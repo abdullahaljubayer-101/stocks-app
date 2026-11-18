@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📈 Stocks App
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-15-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Early%20Setup-orange?style=flat-square)
 
-First, run the development server:
+A stocks app I've started building with **Next.js 15, React 19, TypeScript, Tailwind CSS v4 and shadcn/ui**. 🚧
+
+Right now it's at the **foundation stage**: the project is set up with the App Router, Turbopack, Tailwind v4 and shadcn/ui, with a single test page to make sure everything is wired up correctly. The actual features come next.
+
+---
+
+## 🛠️ Tech stack
+
+| Area | Tools |
+| ---- | ----- |
+| Framework | Next.js 15 (App Router, Turbopack) |
+| Language | TypeScript |
+| UI | React 19, Tailwind CSS v4, shadcn/ui, Radix UI, Lucide icons |
+| Utilities | `clsx`, `tailwind-merge`, `class-variance-authority` |
+| Linting | ESLint |
+
+## 🚀 Getting started
 
 ```bash
+git clone https://github.com/abdullahaljubayer-101/stocks-app.git
+cd stocks-app
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command | What it does |
+| ------- | ------------ |
+| `npm run dev` | Start the dev server (Turbopack) |
+| `npm run build` | Build for production |
+| `npm start` | Run the production build |
+| `npm run lint` | Lint the code |
 
-## Learn More
+## 📁 Project structure
 
-To learn more about Next.js, take a look at the following resources:
+```text
+stocks-app/
+├── app/
+│   ├── layout.tsx     # Root layout
+│   ├── page.tsx       # Home page
+│   └── globals.css    # Tailwind + theme
+├── lib/utils.ts       # cn() helper for class names
+└── components.json    # shadcn/ui config
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Made by **Abdullah Al Jubayer** · [GitHub](https://github.com/abdullahaljubayer-101) · [Portfolio](https://abdullahaljubayer.com)
